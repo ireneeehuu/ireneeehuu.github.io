@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WEB222 Candy Store - Contact</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div id="header">
+        <div id="header-title">
+          <img class="banner-img" src="images/WEB222-Banner-header.png" alt="Pure Golden Snacks" />
+        </div>
+        <!-- menu -->
+
+        <nav class="navbar">
+          <div id="container-nav">
+            <ul class="menu-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="cart.html">My Cart</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="shop" class="main">
+      <div id="sidebar" class="sidebar">
+        <a href="index.html" class="sidebar-item">All Snacks</a>
+        <a href="candy.html" class="sidebar-item">Candy</a>
+        <a href="baked.html" class="sidebar-item">Baked Goods</a>
+      </div>
+
+      <div id="contact-us-form">
+        <form id="form1" action="https://httpbin.org/post" method="post">
+          <fieldset>
+            <div class="contact-us-container">
+              <h1>Contact Us</h1>
+              <p>
+                Need help? Have a question? Concern? Just want to talk?<br />Send us a message
+                below, we're at your service.
+              </p>
+
+              <div>
+                <div class="contact-us-info">
+                  <label class="x1" for="fname">First Name:</label>
+                  <input type="text" name="fname" id="fname" maxlength="50" required /><br />
+                </div>
+
+                <div class="contact-us-info">
+                  <label class="x1" for="lname">Last Name:</label>
+                  <input type="text" name="lname" id="lname" maxlength="50" required /><br />
+                </div>
+
+                <div class="contact-us-info">
+                  <label class="x1" for="email">Email:</label>
+                  <input type="text" name="email" id="email" maxlength="50" required /><br />
+                </div>
+
+                <div class="contact-us-info">
+                  <label class="x1" for="addy">Address:</label>
+                  <input type="text" name="addy" id="addy" maxlength="50" required /><br />
+                </div>
+
+                <div class="contact-us-info">
+                  <label class="x1" for="city">City:</label>
+                  <input type="text" list="citylist" name="city" id="city" required />
+
+                  <datalist id="citylist">
+                    <option value="Toronto"></option>
+                    <option value="Markham"></option>
+                    <option value="Richmond Hill"></option>
+                    <option value="Vaughan"></option>
+                    <option value="Mississauga"></option>
+                    <option value="Pickering"></option>
+                    <option value="Brampton"></option>
+                  </datalist>
+                </div>
+
+                <div class="contact-us-info">
+                  <label class="x1" for="phone">Phone:</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    maxlength="10"
+                    pattern="[4|6|9][0|1|4][5|6|7][0-9]{3}[0-9]{4}"
+                    title="Invalid Canadian telephone"
+                    required
+                  /><br />
+                </div>
+
+                <div class="contact-us-info">
+                  <label class="x1" for="pcode">Postal Code:</label>
+                  <input
+                    type="text"
+                    name="pcode"
+                    id="pcode"
+                    maxlength="6"
+                    pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]"
+                    title="Invalid Canadian postal code"
+                    required
+                  /><br />
+                </div>
+
+                <div>
+                  <div class="contact-us-option">
+                    <p>Can we call you?</p>
+                    <input type="checkbox" name="call" id="yes" value="yes" checked />Yes
+                    <!-- <input type="checkbox" name="call" id="no" value="no" />No -->
+                  </div>
+
+                  <div class="contact-us-option">
+                    <p>Select your reason for contacting</p>
+                    <input type="radio" name="reason" id="reason1" onclick="myClear()" />
+                    <label for="reason1" title="question">Question</label>
+
+                    <input type="radio" name="reason" id="reason2" onclick="myClear()" checked />
+                    <label for="reason2" title="comment">Comment</label>
+
+                    <!-- <input type="radio" name="reason" id='reason3' /> -->
+                    <input type="radio" name="reason" id="reason3" onclick="myFunction()" />
+                    <label for="reason3" title="problem">Order Problem</label>
+
+                    <div id="order"></div>
+                  </div>
+
+                  <div>
+                    <div class="contact-us-message">
+                      <br />
+                      <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Type your message here"
+                        rows="8"
+                        cols="45"
+                        maxlength="500"
+                      ></textarea
+                      ><br /><br />
+                    </div>
+
+                    <div>
+                      <div class="contact-us-button">
+                        <button
+                          class="submit-button"
+                          name="submit"
+                          id="submit-button"
+                          type="submit"
+                          value="Send"
+                        >
+                          Submit
+                        </button>
+                        <button
+                          class="reset-button"
+                          name="reset"
+                          id="reset-button"
+                          type="reset"
+                          value="Clear"
+                        >
+                          Clear
+                        </button>
+                      </div>
+
+                      <div class="id">
+                        <input type="hidden" name="mynameID" id="mynameID" value="Irene H" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script language="javascript" src="script.js"></script>
+  </body>
+</html>

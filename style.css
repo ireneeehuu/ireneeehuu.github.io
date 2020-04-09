@@ -1,0 +1,349 @@
+/** Add any CSS you need to this file. */
+html {
+  background-color: white;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  color: #000000;
+  background-color: white;
+  margin-left: 100px;
+}
+
+/* BANNER */
+header {
+  padding: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  margin: auto;
+}
+
+/* RESPONSIVE RULES */
+/* @media screen and (max-width: 600px) {
+  .banner-img {
+    height: 140px;
+  }
+} */
+
+/* NAV MENU */
+div#container-nav {
+  background-color: #f9f6f7;
+  padding: 8px 0px;
+  text-align: center;
+  position: relative;
+}
+
+div#container-nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+div#container-nav ul li {
+  list-style: none;
+  float: middle;
+  display: inline;
+}
+
+div#container-nav ul li a {
+  font: 16px American Typewriter, serif;
+  color: black;
+  /* border: 2px solid red; */
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.menu-nav a:hover {
+  color: #3d3b3b;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 500px) {
+  div#container-nav ul li a {
+    display: inline-block;
+    margin: auto 5px;
+    padding: 0;
+    font-size: 3vw;
+  }
+  div#container-nav {
+    height: auto;
+  }
+}
+
+/* PRODUCTS */
+.products {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.candy-product {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+  flex-direction: row;
+  background-color: #faf4f4;
+}
+
+.baked-product {
+  padding: 15px;
+  border-width: 2px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+  flex-direction: row;
+  background-color: #faf4f4;
+}
+
+span {
+  padding: 15px 0;
+}
+
+.add {
+  padding-top: auto;
+}
+
+img.candy-img {
+  max-width: 50%;
+}
+img.goods-img {
+  max-width: 50%;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 500px) {
+  .product-desc span {
+    font-size: 3vw;
+    padding: auto;
+  }
+  .add {
+    padding-top: auto;
+    margin: auto;
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 4vw;
+    margin: auto;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #f9f6f7;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.footerlist {
+  position: relative;
+  /* background: lightsteelblue; */
+  display: inline-block;
+  width: 35%;
+  text-align: left;
+  padding: auto;
+  margin: auto;
+}
+
+div.footerlist ul {
+  margin: auto;
+  padding: auto;
+}
+
+div.footerlist ul li {
+  list-style: none;
+  font: 16px American Typewriter, serif;
+  color: black;
+}
+
+div.footerlist ul li a {
+  font: 16px American Typewriter, serif;
+  text-decoration: none;
+  color: black;
+  margin-left: -38px;
+}
+
+.footer-list a:hover {
+  color: #4845a8;
+}
+
+.email {
+  font-size: 75%;
+  width: 60%;
+}
+
+.subscribe {
+  width: 100%;
+  text-align: center;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 700px) {
+  div.footerlist ul li a {
+    text-align: center;
+    margin: auto;
+    font-size: 3vw;
+  }
+  div.footerlist ul li {
+    font-size: 3vw;
+  }
+  .footerlist {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  footer {
+    margin: -10px;
+  }
+  .email {
+    font-size: 3vw;
+    width: 38%;
+    text-align: center;
+  }
+  /* .subscribe {
+    width: 38%;
+  } */
+}
+
+/* CONTACT US */
+form#form1 {
+  margin: 0 auto;
+  width: 600px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  text-align: center;
+}
+
+#contact-us-form {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: -10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.contact-us-info {
+  margin-top: 3px;
+}
+
+button,
+textarea {
+  font-size: 75%;
+  background: transparent;
+}
+
+input {
+  background: transparent;
+}
+
+#order {
+  margin-top: 7px;
+}
+
+label.x1 {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+input[text] {
+  width: 300px;
+}
+
+div#order {
+  font-size: 100%;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 800px) {
+  form#form1 {
+    border: none;
+    width: 400px;
+    padding: auto;
+  }
+  .banner-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  form#form1 {
+    padding: 0px;
+    width: 300px;
+    font-size: 3vw;
+  }
+  label.x1 {
+    display: block;
+    text-align: right;
+  }
+  input[text] {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 420px) {
+  form#form1 {
+    padding: 0px;
+    margin-left: 0px;
+    width: 100px;
+    font-size: 3vw;
+    text-align: center;
+  }
+  label.x1 {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* SIDEBAR */
+.sidebar {
+  height: 100%;
+  width: 118px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f9f6f7;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #3d3b3b;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 480px) {
+  .sidebar {
+    padding-top: 15px;
+    width: 90px;
+  }
+  .sidebar a {
+    font-size: 3vw;
+  }
+}
